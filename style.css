@@ -86,7 +86,8 @@ h3 {
     height: fit-content;
 }
 
-#resume-heading{
-    font-size: 10rem;
-    margin-top: 100rem;
+.resume-heading {
+    font-size:2.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
 }
