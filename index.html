@@ -8,9 +8,17 @@
             name="description"
             content="Johann Albrecht's personal portfolio website"
         />
-        <script src="theme.js"></script>
+        <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") || "dark";
+            } catch {
+                document.documentElement.dataset.theme = "dark";
+            }
+        </script>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+        <script src="theme.js" defer></script>
+        <script src="masonry.js" defer></script>
     </head>
 
     <body>

@@ -1,27 +1,16 @@
+const themeToggle = document.querySelector("#theme-button");
 const root = document.documentElement;
 
-try {
-    root.dataset.theme = localStorage.getItem("theme") || "dark";
-} catch {
-    root.dataset.theme = "dark";
-}
+const updateThemeToggle = () => {
+    const isLight = root.dataset.theme === "light";
 
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.querySelector("#theme-button");
+    themeToggle.setAttribute(
+        "aria-label",
+        `Switch to ${isLight ? "dark" : "light"} mode`,
+    );
+};
 
-    if (!themeToggle) {
-        return;
-    }
-
-    const updateThemeToggle = () => {
-        const isLight = root.dataset.theme === "light";
-
-        themeToggle.setAttribute(
-            "aria-label",
-            `Switch to ${isLight ? "dark" : "light"} mode`,
-        );
-    };
-
+if (themeToggle) {
     updateThemeToggle();
 
     themeToggle.addEventListener("click", () => {
@@ -37,4 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
         updateThemeToggle();
     });
-});
+}
