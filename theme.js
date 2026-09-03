@@ -20,6 +20,13 @@ if (themeToggle) {
 
         try {
             localStorage.setItem("theme", newTheme);
+
+            const bannerImg = document.querySelector("#banner-img");
+            if(newTheme == "light"){
+                bannerImg.src = "./img/banner-clouds.webp";
+            } else{
+                bannerImg.src = "./img/banner-firework.webp";
+            }
         } catch {
             // The theme still works when browser storage is unavailable.
         }
