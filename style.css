@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+:root{
+    color-scheme: dark;
+
+    --text-color: #ddd;
+    --background-color-1: black;
+    --background-color-2: #080808;
+    --border-color: #fff1;
+    --link-color: #a1d8f2;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

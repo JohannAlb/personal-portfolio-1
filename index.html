@@ -10,12 +10,27 @@
         />
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
+        <script>
+            document.documentElement.dataset.theme =
+                localStorage.getItem("theme") || "dark";
+        </script>
     </head>
 
     <body>
-        <!--<header>
-            <nav aria-label="Main Navigation"></nav>
-        </header>-->
+        <header>
+            <nav aria-label="Main Navigation">
+                <button
+                    id="theme-button"
+                    type="button"
+                    aria-label="Switch to light mode"
+                >
+                    <img
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.creazilla.com%2Ficons%2F3199382%2Fsun-icon-sm.png&f=1&nofb=1&ipt=12f6f1f0eafe3543cf508b164d3fea044b0b3054005064c0e9782128c3a312d7"
+                        alt="sun icon"
+                    />
+                </button>
+            </nav>
+        </header>
 
         <main>
             <section aria-label="Banner" id="banner-section">
