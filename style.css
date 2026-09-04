@@ -64,7 +64,7 @@ img {
     justify-content: center;
     align-items: center;
 
-    box-shadow: inset 0 -8rem 4rem -4rem black;
+    box-shadow: inset 0 -7rem 4rem -4rem black;
 }
 
 html[data-theme="light"] #banner-section {
@@ -114,6 +114,7 @@ html[data-theme="light"] .resume-heading {
     grid-template-columns: repeat(auto-fill, minmax(min(25rem, 90vw), 1fr));
     gap: 1rem;
     padding: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 #card-container.masonry-ready {
