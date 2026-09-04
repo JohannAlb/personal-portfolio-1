@@ -1,236 +1,288 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Johann Albrecht</title>
+        <meta
+            name="description"
+            content="Johann Albrecht's personal portfolio website"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johann Albrecht</title>
-    <meta name="description" content="Johann Albrecht's personal portfolio website" />
+        <!-- These links are written by Gemini 3.6 Thinking -->
+        <!-- Google Fonts Resource Hints -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- These links are written by Gemini 3.6 Thinking -->
-    <!-- Google Fonts Resource Hints -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Fallbacks for older browsers (optional) -->
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
-    <!-- Fallbacks for older browsers (optional) -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <!-- All 3 scripts were written by GPT 5.6 Sol -->
+        <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("theme") || "dark";
+            } catch {
+                document.documentElement.dataset.theme = "dark";
+            }
+        </script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="theme.js" defer></script>
+        <script src="masonry.js" defer></script>
+    </head>
+    <body>
+        <!--<header>-->
+        <!--<nav aria-label="Main Navigation">-->
+        <button
+            id="theme-button"
+            type="button"
+            aria-label="Switch to light mode"
+        >
+            <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.creazilla.com%2Ficons%2F3199382%2Fsun-icon-sm.png&f=1&nofb=1&ipt=12f6f1f0eafe3543cf508b164d3fea044b0b3054005064c0e9782128c3a312d7"
+                alt=""
+                aria-hidden="true"
+            />
+        </button>
+        <!--</nav>-->
+        <!--</header>-->
 
-    <!-- All 3 scripts were written by GPT 5.6 Sol -->
-    <script>
-        try {
-            document.documentElement.dataset.theme =
-                localStorage.getItem("theme") || "dark";
-        } catch {
-            document.documentElement.dataset.theme = "dark";
-        }
-    </script>
-    <link rel="stylesheet" href="style.css" />
-    <script src="theme.js" defer></script>
-    <script src="masonry.js" defer></script>
-</head>
+        <main>
+            <section aria-label="Banner" id="banner-section">
+                <img
+                    id="banner-img"
+                    src="./img/banner-firework.webp"
+                    alt="Banner Image"
+                    fetchpriority="high"
+                />
+                <h1 id="banner-h1">Johann Albrecht</h1>
+            </section>
 
-<body>
-    <!--<header>-->
-    <!--<nav aria-label="Main Navigation">-->
-    <button id="theme-button" type="button" aria-label="Switch to light mode">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.creazilla.com%2Ficons%2F3199382%2Fsun-icon-sm.png&f=1&nofb=1&ipt=12f6f1f0eafe3543cf508b164d3fea044b0b3054005064c0e9782128c3a312d7"
-            alt="" aria-hidden="true" />
-    </button>
-    <!--</nav>-->
-    <!--</header>-->
+            <h2 class="resume-heading">Resume Content</h2>
+            <section id="card-container">
+                <section class="card" id="ContactInfoCard">
+                    <h3>Contact info</h3>
+                    <address>
+                        <p>
+                            Email:
+                            <a href="mailto:joheli.albrecht@outlook.de"
+                                >joheli.albrecht@outlook.de</a
+                            >
+                        </p>
+                        <p>
+                            Linked in:
+                            <a href="https://www.linkedin.com/in/johalb/"
+                                >Johann Albrecht | LinkedIn</a
+                            >
+                        </p>
+                    </address>
+                </section>
 
-    <main>
-        <section aria-label="Banner" id="banner-section">
-            <img id="banner-img" src="./img/banner-firework.webp" alt="Banner Image" fetchpriority="high" />
-            <h1 id="banner-h1">Johann Albrecht</h1>
-        </section>
-
-        <h2 class="resume-heading">Resume Content</h2>
-        <section id="card-container">
-            <section class="card" id="ContactInfoCard">
-                <h3>Contact info</h3>
-                <address>
+                <section class="card" id="AboutMe">
+                    <h3>About me</h3>
                     <p>
-                        Email:
-                        <a href="mailto:joheli.albrecht@outlook.de">joheli.albrecht@outlook.de</a>
+                        I see myself as an organised and reliable IT student
+                        with experience in service environments.
                     </p>
+                </section>
+
+                <section class="card" id="Languages">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English - Fluent</li>
+                        <li>German - Fluent</li>
+                        <li>Swedish - Fluent</li>
+                        <li>
+                            Japanese - Currently Learning (Beginner - A1/A2)
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="card" id="Education">
+                    <h3>Education</h3>
+                    <h4>
+                        <a
+                            href="https://ntigymnasiet.se/lund/program/gymnasieingenjorsprogrammet/mjukvarudesign/"
+                            >TE4 - NTI Gymnasiet Lund</a
+                        >
+                    </h4>
                     <p>
-                        Linked in:
-                        <a href="https://www.linkedin.com/in/johalb/">Johann Albrecht | LinkedIn</a>
+                        Upper Secondary Engineering Diploma (Gymnasieingenjör,
+                        TE4), Software Design (Mjukvarudesign)
                     </p>
-                </address>
-            </section>
+                    <ul>
+                        <li>icludes 10 week internship at [your company ;)]</li>
+                        <li>Student Ambassador</li>
+                        <li>Makerspace Ambassador</li>
+                        <li>Board member of NTI Lund Makerspace</li>
+                    </ul>
+                    <br />
+                    <h4>
+                        <a href="https://ntigymnasiet.se/lund/"
+                            >NTI Gymnasiet Lund</a
+                        >
+                    </h4>
+                    <p>Information Technology</p>
+                    <ul>
+                        <li>Student Ambassador</li>
+                        <li>Makerspace Ambassador</li>
+                        <li>Board member of NTI Lund Makerspace</li>
+                    </ul>
+                    <br />
+                    <h4>Kunskapskolan Lund</h4>
+                    <p>Grade 7-9</p>
+                    <ul>
+                        <li>Environmental Council/Society</li>
+                    </ul>
+                </section>
 
-            <section class="card" id="AboutMe">
-                <h3>About me</h3>
-                <p>
-                    I see myself as an organised and reliable IT student
-                    with experience in service environments.
-                </p>
-            </section>
+                <section class="card" id="HonorAndAwards">
+                    <h3>Honor & awards</h3>
+                    <h4>
+                        <a
+                            href="https://academedia.se/nyheter/nti-gymnasiet-lund-vinner-nti-green-tech-challenge-2026/"
+                            >NTI Greentech Challenge Winner</a
+                        >
+                    </h4>
+                    <p>Issued by NTI Gymnasiet · Apr 2026</p>
+                </section>
 
-            <section class="card" id="Languages">
-                <h3>Languages</h3>
-                <ul>
-                    <li>English - Fluent</li>
-                    <li>German - Fluent</li>
-                    <li>Swedish - Fluent</li>
-                    <li>
-                        Japanese - Currently Learning (Beginner - A1/A2)
-                    </li>
-                </ul>
-            </section>
+                <section class="card" id="Volunteering">
+                    <h3>Volunteering</h3>
+                    <h4>
+                        <a href="https://oredev.org/"
+                            >Volunteer Staff - Øredev</a
+                        >
+                    </h4>
+                    <p>Nov 2025</p>
+                    <p>
+                        Technology Volunteer event staff, speaker support among
+                        other things.
+                    </p>
+                </section>
 
-            <section class="card" id="Education">
-                <h3>Education</h3>
-                <h4>
-                    <a href="https://ntigymnasiet.se/lund/program/gymnasieingenjorsprogrammet/mjukvarudesign/">TE4 - NTI
-                        Gymnasiet Lund</a>
-                </h4>
-                <p>
-                    Upper Secondary Engineering Diploma (Gymnasieingenjör,
-                    TE4), Software Design (Mjukvarudesign)
-                </p>
-                <ul>
-                    <li>icludes 10 week internship at [your company ;)]</li>
-                    <li>Student Ambassador</li>
-                    <li>Makerspace Ambassador</li>
-                    <li>Board member of NTI Lund Makerspace</li>
-                </ul>
-                <br />
-                <h4>
-                    <a href="https://ntigymnasiet.se/lund/">NTI Gymnasiet Lund</a>
-                </h4>
-                <p>Information Technology</p>
-                <ul>
-                    <li>Student Ambassador</li>
-                    <li>Makerspace Ambassador</li>
-                    <li>Board member of NTI Lund Makerspace</li>
-                </ul>
-                <br />
-                <h4>Kunskapskolan Lund</h4>
-                <p>Grade 7-9</p>
-                <ul>
-                    <li>Environmental Council/Society</li>
-                </ul>
-            </section>
-
-            <section class="card" id="HonorAndAwards">
-                <h3>Honor & awards</h3>
-                <h4>
-                    <a href="https://academedia.se/nyheter/nti-gymnasiet-lund-vinner-nti-green-tech-challenge-2026/">NTI
-                        Greentech Challenge Winner</a>
-                </h4>
-                <p>Issued by NTI Gymnasiet · Apr 2026</p>
-            </section>
-
-            <section class="card" id="Volunteering">
-                <h3>Volunteering</h3>
-                <h4>
-                    <a href="https://oredev.org/">Volunteer Staff - Øredev</a>
-                </h4>
-                <p>Nov 2025</p>
-                <p>
-                    Technology Volunteer event staff, speaker support among
-                    other things.
-                </p>
-            </section>
-
-            <!-- Experiences, dont have :( -->
-            <!--<section class="card">
+                <!-- Experiences, dont have :( -->
+                <!--<section class="card">
                     <h3>Experience</h3>
                 </section>-->
 
-            <section class="card" id="Skills">
-                <h3>Skills</h3>
-                <h4>Software</h4>
-                <ul>
-                    <li>
-                        <a href="https://www.blender.org/about/">Blender3D</a>
-                        - used a lot
-                    </li>
-                    <li>
-                        <a href="https://www.adobe.com/products/photoshop-lightroom-classic.html">Adobe Lightroom</a>
-                        - used a lot
-                    </li>
-                    <li>
-                        <a href="https://www.blackmagicdesign.com/products/davinciresolve">Davinci Resolve</a>
-                        - used a bit
-                    </li>
-                    <li>
-                        <a href="https://unity.com/">Unity</a> - used a bit
-                    </li>
-                </ul>
-                <br>
-                <h4>Programming</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>C#</li>
-                    <li>Git</li>
-                </ul>
-                <br>
-                <h4>Other</h4>
-                <ul>
-                    <li>Photography</li>
-                    <li>PC Building & Parts Selection</li>
-                </ul>
-                <br>
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Calm under Pressure</li>
-                    <li>Leadership</li>
-                    <li>Adaptability</li>
-                    <li>Problem Solving</li>
-                </ul>
+                <section class="card" id="Skills">
+                    <h3>Skills</h3>
+                    <h4>Software</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.blender.org/about/"
+                                >Blender3D</a
+                            >
+                            - used a lot
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.adobe.com/products/photoshop-lightroom-classic.html"
+                                >Adobe Lightroom</a
+                            >
+                            - used a lot
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.blackmagicdesign.com/products/davinciresolve"
+                                >Davinci Resolve</a
+                            >
+                            - used a bit
+                        </li>
+                        <li>
+                            <a href="https://unity.com/">Unity</a> - used a bit
+                        </li>
+                    </ul>
+                    <br />
+                    <h4>Programming</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>C#</li>
+                        <li>Git</li>
+                    </ul>
+                    <br />
+                    <h4>Other</h4>
+                    <ul>
+                        <li>Photography</li>
+                        <li>PC Building & Parts Selection</li>
+                    </ul>
+                    <br />
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Calm under Pressure</li>
+                        <li>Leadership</li>
+                        <li>Adaptability</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </section>
+
+                <section class="card" id="Certificates">
+                    <h3>
+                        <a href="https://www.credly.com/users/johann-albrecht"
+                            >Certificates</a
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.credly.com/badges/c6207f76-3207-4ee5-b01e-9613922553e2"
+                                >Unity Certified User: VR Developer</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.credly.com/badges/234a27c3-95be-4a02-a181-2338727b1ef9"
+                                >IT Specialist - Software Development</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.credly.com/badges/215de1f2-f6cb-4aa5-bb6d-dd15d38007a5"
+                                >IT Specialist - HTML and CSS</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.credly.com/badges/d1c656c1-1db1-43ff-a129-688ef37b43d8"
+                                >IT Specialist - Networking</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.credly.com/badges/fae9b395-f61e-4916-bc92-86b24b70a29f"
+                                >IT Specialist - Computational Thinking</a
+                            >
+                        </li>
+                    </ul>
+                </section>
             </section>
+        </main>
 
-            <section class="card" id="Certificates">
-                <h3>
-                    <a href="https://www.credly.com/users/johann-albrecht">Certificates</a>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="https://www.credly.com/badges/c6207f76-3207-4ee5-b01e-9613922553e2">Unity Certified
-                            User: VR Developer</a>
-                    </li>
-                    <li>
-                        <a href="https://www.credly.com/badges/234a27c3-95be-4a02-a181-2338727b1ef9">IT Specialist -
-                            Software Development</a>
-                    </li>
-                    <li>
-                        <a href="https://www.credly.com/badges/215de1f2-f6cb-4aa5-bb6d-dd15d38007a5">IT Specialist -
-                            HTML and CSS</a>
-                    </li>
-                    <li>
-                        <a href="https://www.credly.com/badges/d1c656c1-1db1-43ff-a129-688ef37b43d8">IT Specialist -
-                            Networking</a>
-                    </li>
-                    <li>
-                        <a href="https://www.credly.com/badges/fae9b395-f61e-4916-bc92-86b24b70a29f">IT Specialist -
-                            Computational Thinking</a>
-                    </li>
-                </ul>
+        <footer>
+            <section>
+                <p>&copy;2026</p>
             </section>
-        </section>
-    </main>
-
-    <footer>
-        <section>
-            <p>&copy;2026</p>
-        </section>
-        <address aria-label="Contact info">
-            <p>
-                Email:
-                <a href="mailto:joheli.albrecht@outlook.de">joheli.albrecht@outlook.de</a>
-            </p>
-            <p>
-                Linked in:
-                <a href="https://www.linkedin.com/in/johalb/">Johann Albrecht | LinkedIn</a>
-            </p>
-        </address>
-    </footer>
-</body>
-
+            <address aria-label="Contact info">
+                <p>
+                    Email:
+                    <a href="mailto:joheli.albrecht@outlook.de"
+                        >joheli.albrecht@outlook.de</a
+                    >
+                </p>
+                <p>
+                    Linked in:
+                    <a href="https://www.linkedin.com/in/johalb/"
+                        >Johann Albrecht | LinkedIn</a
+                    >
+                </p>
+            </address>
+        </footer>
+    </body>
 </html>
